@@ -71,6 +71,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
 			
 			self.presentViewController(photoLibraryController, animated: true, completion: nil)
 		}
+		// If both the camera and photo album are unavailable, display an alert.
 		else{
 			var alertController = UIAlertController(title: "Alert", message: "Your device does not support the camera or photo Library", preferredStyle: UIAlertControllerStyle.Alert)
 			
@@ -127,8 +128,21 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
 		return cell
 	}
 	
+	// MARK: - UICollectionViewDelegate
+	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		// Get the selected item from the feedArray
+		let thisItem = feedArray[indexPath.row] as FeedItem
+		
+		// Initialize an instance of the FilterViewController() and set it's FeedItem property
+		var filterVC = FilterViewController()
+		filterVC.thisFeedItem = thisItem
+		
+		self.navigationController?.pushViewController(filterVC, animated: false)
+	}
 	
-
+	
+	
+	
 }
 
 
