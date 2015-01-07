@@ -10,13 +10,13 @@
 		5D2293CF1A41FC330047EF96 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2293CE1A41FC320047EF96 /* FilterViewController.swift */; };
 		5D56CB8E1A347515002BD4FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D56CB8D1A347515002BD4FC /* MobileCoreServices.framework */; };
 		5D72546D1A346F8200BF012D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72546C1A346F8200BF012D /* FeedCell.swift */; };
-		5D8A72101A419FB5008EE608 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8A720F1A419FB5008EE608 /* FeedItem.swift */; };
 		5D903B311A2617100017B77A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D903B301A2617100017B77A /* AppDelegate.swift */; };
 		5D903B341A2617100017B77A /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D903B321A2617100017B77A /* ExchangeAGram.xcdatamodeld */; };
 		5D903B391A2617100017B77A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D903B371A2617100017B77A /* Main.storyboard */; };
 		5D903B3B1A2617100017B77A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D903B3A1A2617100017B77A /* Images.xcassets */; };
 		5D903B3E1A2617100017B77A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D903B3C1A2617100017B77A /* LaunchScreen.xib */; };
 		5D903B4A1A2617100017B77A /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D903B491A2617100017B77A /* ExchangeAGramTests.swift */; };
+		5DCDC59D1A5D69B10059682E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC59C1A5D69B10059682E /* FeedItem.swift */; };
 		5DE9200D1A54529B00BB6F54 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9200C1A54529B00BB6F54 /* FilterCell.swift */; };
 		5DF68E9E1A26208800CFC865 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF68E9D1A26208800CFC865 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,6 @@
 		5D2293CE1A41FC320047EF96 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		5D56CB8D1A347515002BD4FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5D72546C1A346F8200BF012D /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		5D8A720F1A419FB5008EE608 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		5D903B2B1A2617100017B77A /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D903B2F1A2617100017B77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D903B301A2617100017B77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		5D903B431A2617100017B77A /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D903B481A2617100017B77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D903B491A2617100017B77A /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		5DCDC59C1A5D69B10059682E /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		5DE9200C1A54529B00BB6F54 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		5DF68E9D1A26208800CFC865 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,11 +95,10 @@
 				5D2293CE1A41FC320047EF96 /* FilterViewController.swift */,
 				5D72546C1A346F8200BF012D /* FeedCell.swift */,
 				5DE9200C1A54529B00BB6F54 /* FilterCell.swift */,
+				5DCDC59E1A5D69F00059682E /* Model */,
 				5D903B371A2617100017B77A /* Main.storyboard */,
 				5D903B3A1A2617100017B77A /* Images.xcassets */,
 				5D903B3C1A2617100017B77A /* LaunchScreen.xib */,
-				5D903B321A2617100017B77A /* ExchangeAGram.xcdatamodeld */,
-				5D8A720F1A419FB5008EE608 /* FeedItem.swift */,
 				5D903B2E1A2617100017B77A /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -129,6 +128,15 @@
 				5D903B481A2617100017B77A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DCDC59E1A5D69F00059682E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D903B321A2617100017B77A /* ExchangeAGram.xcdatamodeld */,
+				5DCDC59C1A5D69B10059682E /* FeedItem.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +244,7 @@
 				5D903B311A2617100017B77A /* AppDelegate.swift in Sources */,
 				5D72546D1A346F8200BF012D /* FeedCell.swift in Sources */,
 				5DF68E9E1A26208800CFC865 /* FeedViewController.swift in Sources */,
-				5D8A72101A419FB5008EE608 /* FeedItem.swift in Sources */,
+				5DCDC59D1A5D69B10059682E /* FeedItem.swift in Sources */,
 				5D903B341A2617100017B77A /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -87,6 +87,8 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
 		let image = info[UIImagePickerControllerOriginalImage] as UIImage
 		// Present the image as imageData, an NSData object
 		let imageData = UIImageJPEGRepresentation(image, 1.0)
+		let thumbNailData = UIImageJPEGRepresentation(image, 0.2)
+		
 		
 		// Get the managedObjectContext and our FeedItem Entity from our appDelegate
 		let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
@@ -97,6 +99,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
 		// Setup the feedItem
 		feedItem.image = imageData
 		feedItem.caption = "test caption"
+		feedItem.thumbNail = thumbNailData
 		
 		// Save the created feedItem to CoreData and append it to the feedArray
 		(UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
