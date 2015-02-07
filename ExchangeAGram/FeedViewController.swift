@@ -48,6 +48,11 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
 	
 	// MARK: - IBAction
 	
+	@IBAction func profileTapped(sender: UIBarButtonItem) {
+		self.performSegueWithIdentifier("profileSegue", sender: nil)
+	}
+	
+	
 	@IBAction func snapBarButtonItemTapped(sender: UIBarButtonItem) {
 		// Check if we have a camera available on the device we're using
 		if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
