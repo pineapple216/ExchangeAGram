@@ -207,7 +207,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
 	
 	// MARK: - Caching Functions
 	func cacheImage(imageNumber: Int) {
-		let fileName = "\(imageNumber)"
+		let fileName = "\(thisFeedItem.uniqueID)\(imageNumber)"
 		let uniquePath = tmp.stringByAppendingPathComponent(fileName)
 	
 		if !NSFileManager.defaultManager().fileExistsAtPath(fileName) {
@@ -220,7 +220,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
 	}
 	
 	func getCachedImage(imageNumber: Int) -> UIImage {
-		let fileName = "\(imageNumber)"
+		let fileName = "\(thisFeedItem.uniqueID)\(imageNumber)"
 		let uniquePath = tmp.stringByAppendingPathComponent(fileName)
 		
 		var image:UIImage
